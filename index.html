@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your doctor</title>
+  <title>Your Gradient Website</title>
   <style>
     body {
       margin: 0;
@@ -26,9 +26,9 @@
     footer {
       padding: 10px;
       text-align: center;
-      background: #333; 
-      position= absolute;
-      bottom= 20px;
+      background: #333; /* Dark background for footer */
+      position: absolute;
+      bottom: 20px;
     }
   </style>
 </head>
@@ -44,6 +44,20 @@
   <footer>
     <p>&copy; APPROVED</p>
   </footer>
+
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '6570adef8e4aa90008724cd2' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production'
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
 
 </body>
 </html>
